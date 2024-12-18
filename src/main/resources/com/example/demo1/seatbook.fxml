@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="flight_back" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.seatController">
+   <children>
+      <FlowPane prefHeight="70.0" prefWidth="1280.0" styleClass="nav_bar" stylesheets="@style.css">
+         <children>
+            <Label fx:id="idtitle" text="Online Ticket Booking" textFill="#e1dbdb">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <Button fx:id="idhome" mnemonicParsing="false" onAction="#onhome" styleClass="nav_bar_btn" stylesheets="@style.css" text="Home" textFill="#dcd4d4">
+               <FlowPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </FlowPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="idadmin" mnemonicParsing="false" onAction="#onadmin" styleClass="nav_bar_btn" stylesheets="@style.css" text="Admin" textFill="#c7c1c1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="idlogout" mnemonicParsing="false" onAction="#onlogout" styleClass="nav_bar_btn" stylesheets="@style.css" text="Logout" textFill="#f2eaea">
+               <FlowPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </FlowPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></FlowPane>
+      <HBox prefHeight="88.0" prefWidth="1280.0">
+         <children>
+            <Label fx:id="airname" styleClass="file" stylesheets="@style.css" text="RL AIRLINES">
+               <HBox.margin>
+                  <Insets left="70.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <FlowPane prefHeight="534.0" prefWidth="1280.0" rowValignment="TOP">
+
+         <children>
+            <VBox prefHeight="100.0" prefWidth="224.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label fx:id="idcolor" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: darkblue;" />
+                  <Label fx:id="idfclass" styleClass="label_bar2" stylesheets="@style.css" text="First Class">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="idblue" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: blue;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="idbclass" styleClass="label_bar2" stylesheets="@style.css" text="Bussiness Class">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="idlight" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: lightblue;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="ideco" styleClass="label_bar2" stylesheets="@style.css" text="Economy Class">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="idlight1" layoutX="30.0" layoutY="163.0" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: coral;" />
+                  <Label fx:id="ideco1" layoutX="40.0" layoutY="200.0" styleClass="label_bar2" stylesheets="@style.css" text=" Booked Ticket">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children></VBox>
+            <HBox prefHeight="530.0" prefWidth="526.0">
+               <children>
+
+                  <ScrollPane prefHeight="530.0" prefWidth="338.0">
+                     <content>
+                        <HBox prefHeight="1018.0" prefWidth="342.0" style="-fx-backgrounDcolor: white;">
+                           <padding>
+                              <Insets bottom="30.0" left="10.0" right="10.0" top="30.0" />
+                           </padding>
+                           <children>
+                              <VBox prefHeight="958.0" prefWidth="34.0">
+                                 <children>
+                                    <ToggleButton fx:id="A1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="1A" textFill="#f4f0f0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="2A" textFill="#efebeb">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A3" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="3A" textFill="#f7f5f5">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A4" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="4A" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A5" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="5A" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A6" layoutX="10.0" layoutY="263.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="6A" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A7" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="7A" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A8" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="8A" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A9" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="9A" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A10" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="10A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A11" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="11A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A12" layoutX="10.0" layoutY="474.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="12A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A13" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="13A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A14" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="14A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A15" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="15A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A16" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="16A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A17" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="17A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A18" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="18A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A19" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="19A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A20" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="20A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A21" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="21A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A22" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="22A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A23" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="23A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A24" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="24A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="A25" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="25A" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox layoutX="20.0" layoutY="40.0" prefHeight="958.0" prefWidth="37.0">
+                                 <children>
+                                    <ToggleButton fx:id="B1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="1B" textFill="#f4f0f0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="2B" textFill="#efebeb">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B3" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="3B" textFill="#f7f5f5">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B4" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="4B" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B5" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="5B" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B6" layoutX="10.0" layoutY="263.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="6B" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B7" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="7B" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B8" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="8B" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B9" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="9B" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B10" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="10B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B11" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="11B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B12" layoutX="10.0" layoutY="474.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="12B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B13" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="13B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B14" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="14B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B15" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="15B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B16" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="16B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B17" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="17B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B18" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="18B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B19" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="19B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B20" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="20B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B21" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="21B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B22" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="22B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B23" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="23B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B24" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="24B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="B25" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="25B" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox layoutX="90.0" layoutY="40.0" prefHeight="958.0" prefWidth="37.0">
+                                 <children>
+                                    <ToggleButton fx:id="C1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="1C" textFill="#f4f0f0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="2C" textFill="#efebeb">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C3" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="3C" textFill="#f7f5f5">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C4" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="4C" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C5" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="5C" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C6" layoutX="10.0" layoutY="263.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="6C" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C7" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="7C" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C8" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="8C" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C9" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="9C" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C10" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="10C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C11" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="11C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C12" layoutX="10.0" layoutY="474.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="12C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C13" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="13C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C14" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="14C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C15" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="15C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C16" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="16C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C17" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="17C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C18" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="18C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C19" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="19C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C20" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="20C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C21" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="21C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C22" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="22C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C23" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="23C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C24" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="24C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="C25" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="25C" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox layoutX="160.0" layoutY="40.0" prefHeight="958.0" prefWidth="38.0">
+                                 <children>
+                                    <ToggleButton fx:id="D1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="1D" textFill="#f4f0f0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="2D" textFill="#efebeb">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D3" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="3D" textFill="#f7f5f5">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D4" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="4D" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D5" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="5D" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D6" layoutX="10.0" layoutY="263.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="6D" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D7" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="7D" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D8" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="8D" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D9" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="9D" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D10" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="10D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D11" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="11 D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D12" layoutX="10.0" layoutY="474.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="12D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D13" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="13D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D14" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="14D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D15" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="15D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D16" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="16D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D17" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="17D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D18" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="18D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D19" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="19D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D20" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="20D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D21" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="21D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D22" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="22D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D23" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="23D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D24" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="24D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="D25" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="25D" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox layoutX="181.0" layoutY="40.0" prefHeight="958.0" prefWidth="38.0">
+                                 <children>
+                                    <ToggleButton fx:id="E1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="1E" textFill="#f4f0f0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="2E" textFill="#efebeb">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E3" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="3E" textFill="#f7f5f5">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E4" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="4E" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E5" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="5E" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E6" layoutX="10.0" layoutY="263.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="6E" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E7" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="7E" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E8" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="8E" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E9" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="9E" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E10" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="10E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E11" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="11E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E12" layoutX="10.0" layoutY="474.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="12E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E13" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="13E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E14" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="14E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E15" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="15E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E16" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="16E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E17" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="17E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E18" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="18E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E19" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="19E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E20" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="20E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E21" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="21E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E22" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="22E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E23" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="23E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E24" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="24E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="E25" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="25E" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox layoutX="230.0" layoutY="40.0" prefHeight="958.0" prefWidth="38.0">
+                                 <children>
+                                    <ToggleButton fx:id="F1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="1F" textFill="#f4f0f0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="2F" textFill="#efebeb">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F3" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="3F" textFill="#f7f5f5">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F4" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtn1" stylesheets="@style.css" text="4F" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F5" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="5F" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F6" layoutX="10.0" layoutY="263.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="6F" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F7" layoutX="10.0" layoutY="324.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="7F" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F8" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="8F" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F9" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtnb" stylesheets="@style.css" text="9F" textFill="#ece3e3">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F10" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="10F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F11" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="11F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F12" layoutX="10.0" layoutY="474.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="12F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F13" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="13F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F14" layoutX="10.0" layoutY="508.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="14F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F15" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="15F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F16" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="16F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F17" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="17F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F18" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="18F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F19" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="19F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F20" layoutX="10.0" layoutY="469.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="20F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F21" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="21F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F22" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="22F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F23" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="23F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F24" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="24F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="F25" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="sbtne" stylesheets="@style.css" text="25F" textFill="#180202">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </ToggleButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+            <StackPane>
+               <children>
+                  <VBox fx:id="vbox1" prefHeight="200.0" prefWidth="500.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="392.0" prefWidth="500.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Label fx:id="idpass" styleClass="passenger" stylesheets="@style.css" text="PASSENGER DETAILS" textFill="#847c7c">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="idname2" disable="true" layoutX="20.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="496.0" style="-fx-backgrounDcolor: silver;" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="idname3" disable="true" layoutX="20.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="475.0" style="-fx-backgrounDcolor: silver;" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="idname4" disable="true" layoutX="20.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="399.0" style="-fx-backgrounDcolor: silver;" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="idname5" disable="true" layoutX="20.0" layoutY="248.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="300.0" style="-fx-backgrounDcolor: silver;" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="idcancel2" mnemonicParsing="false" onAction="#cancel2" prefHeight="57.0" prefWidth="222.0" styleClass="cancelbtn" stylesheets="@style2.css" text="Cancel">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="idcontinue2" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="222.0" styleClass="continuebtn" stylesheets="@style2.css" text="continue" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vbox2" prefHeight="200.0" prefWidth="500.0" visible="false">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="392.0" prefWidth="500.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Label fx:id="idpassenger" styleClass="passenger" stylesheets="@style.css" text="PASSENGER DETAILS" textFill="#232121">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="idtxtuser" layoutX="20.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="496.0" promptText="Name" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="idtxtemail" layoutX="20.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="475.0" promptText="Email" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="idpassport" layoutX="20.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="399.0" promptText="Passport N0" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="idNational" layoutX="20.0" layoutY="248.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="66.0" prefWidth="300.0" promptText="Natinal ID (XXXXXXXXXXX)" styleClass="textbtn" stylesheets="@style2.css">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="idcancel" mnemonicParsing="false" onAction="#cancel" prefHeight="57.0" prefWidth="222.0" styleClass="cancelbtn" stylesheets="@style2.css" text="Cancel">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="idcontinue" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#oncontinue" prefHeight="57.0" prefWidth="222.0" styleClass="continuebtn" stylesheets="@style2.css" text="Continue">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </FlowPane>
+   </children>
+</VBox>

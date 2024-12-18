@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane stylesheets="@style2.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Admincontroller">
+   <children>
+      <ScrollPane maxHeight="780.0" maxWidth="1350.0">
+         <content>
+            <FlowPane maxHeight="780.0" maxWidth="1350.0" minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0" styleClass="admin_back" stylesheets="@style2.css">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="802.0" prefWidth="300.0" stylesheets="@style2.css">
+                     <children>
+                        <ImageView fx:id="idAdminlogo" fitHeight="186.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@Admin.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="idlabel" styleClass="admin_btn" stylesheets="@style2.css" text="Welcome">
+                           <VBox.margin>
+                              <Insets left="3.0" top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adminlabel" styleClass="admin_btn" stylesheets="@style2.css" text="Admin">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="idflightlist" mnemonicParsing="false" onAction="#flightManage" prefHeight="59.0" prefWidth="274.0" styleClass="admin_b" stylesheets="@style2.css" text="Flight Management">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="idimg1" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@add.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="idcustomer" layoutX="22.0" layoutY="22.0" mnemonicParsing="false" onAction="#custList" prefHeight="59.0" prefWidth="274.0" styleClass="admin_b" stylesheets="@style2.css" text="Customer List">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="idimg2" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@add.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="idsinout" layoutX="22.0" layoutY="81.0" mnemonicParsing="false" onAction="#signOut" prefHeight="46.0" prefWidth="174.0" styleClass="admin_b" stylesheets="@style2.css" text="Sign Out">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fx:id="idimg3" fitHeight="33.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@lout.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets left="40.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="40.0" />
+                     </padding>
+                  </VBox>
+                  <StackPane prefHeight="802.0" prefWidth="978.0">
+                     <children>
+                        <VBox fx:id="idAddFlight" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="802.0" prefWidth="1262.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="978.0">
+                                 <children>
+                                    <TextField fx:id="idsearch" onKeyPressed="#Searchflights" prefHeight="55.0" prefWidth="428.0" promptText="search by Date">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="idbtn" mnemonicParsing="false" prefHeight="52.0" prefWidth="94.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <SVGPath content="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <TableView fx:id="idtable" maxHeight="-Infinity" maxWidth="-Infinity" onKeyTyped="#Searchflights" prefHeight="386.0" prefWidth="954.0">
+                                <columns>
+                                    <TableColumn fx:id="iddep" prefWidth="154.40003967285156" text="Departure" />
+                                    <TableColumn fx:id="iddes" prefWidth="154.40003967285156" text="Destination" />
+                                    <TableColumn fx:id="idfli" prefWidth="124.0" text="Flight No" />
+                                    <TableColumn fx:id="idairline" prefWidth="162.39996337890625" text="Airline" />
+                                    <TableColumn fx:id="iddate" prefWidth="136.79998779296875" text="Date" />
+                                    <TableColumn fx:id="idtime" minWidth="0.0" prefWidth="75.2000732421875" text="Time" />
+                                    <TableColumn fx:id="idair" prefWidth="203.199951171875" text="Airport" />
+                                </columns>
+                              </TableView>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="idinsert" mnemonicParsing="false" onAction="#insert" prefHeight="53.0" prefWidth="174.0" styleClass="btndel" stylesheets="@style2.css" text="Insert">
+                                       <HBox.margin>
+                                          <Insets left="80.0" top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="iddelete" layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#delete" prefHeight="53.0" prefWidth="174.0" styleClass="btndel" stylesheets="@style2.css" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="30.0" top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="idCustomerdetail" prefHeight="200.0" prefWidth="100.0" visible="false">
+                           <children>
+                              <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="idsearch2" maxHeight="-Infinity" maxWidth="-Infinity" onKeyPressed="#searchFlights2" prefHeight="50.0" prefWidth="470.0" promptText="Search By Name" stylesheets="@style2.css" />
+                                    <Button fx:id="idbtn2" mnemonicParsing="false" prefHeight="50.0" prefWidth="94.0">
+                                       <graphic>
+                                          <SVGPath content="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <ScrollPane>
+                                 <content>
+                                    <TableView fx:id="idTable2" prefHeight="384.0" prefWidth="954.0">
+                                      <columns>
+                                        <TableColumn fx:id="idCusname" prefWidth="120.00002747774124" text="Customer Name" />
+                                          <TableColumn fx:id="idprice" prefWidth="120.00002747774124" text="Ticket Price" />
+                                          <TableColumn fx:id="idDep1" prefWidth="120.00002747774124" text="Departure" />
+                                          <TableColumn fx:id="iddes2" prefWidth="120.00002747774124" text="Destination" />
+                                          <TableColumn fx:id="idFli2" prefWidth="120.00002747774124" text="Flight No" />
+                                          <TableColumn fx:id="idAir2" prefWidth="120.00002747774124" text="Airline" />
+                                          <TableColumn fx:id="idDate2" prefWidth="120.00002747774124" text="Date" />
+                                          <TableColumn fx:id="idTime2" prefWidth="120.00002747774124" text="Time" />
+                                          <TableColumn fx:id="idTime21" prefWidth="120.00002747774124" text="Ticket No" />
+                                          <TableColumn fx:id="idTime211" prefWidth="120.00002747774124" text="Ticket No" />
+                                      </columns>
+                                    </TableView>
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="5.0" top="20.0" />
+                                 </VBox.margin>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.confirmController">
+<children>
+   <HBox prefHeight="55.0" prefWidth="918.0">
+      <children>
+         <ImageView fx:id="idreview" fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+            <HBox.margin>
+               <Insets left="10.0" top="16.0" />
+            </HBox.margin>
+            <image>
+               <Image url="@review.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="idreviewdetails" prefHeight="35.0" prefWidth="228.0" styleClass="clabel" stylesheets="@style2.css" text="Review Details" textFill="#1a0c94">
+            <HBox.margin>
+               <Insets left="5.0" top="14.0" />
+            </HBox.margin>
+            <font>
+               <Font size="28.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <VBox prefHeight="75.0" prefWidth="918.0" style="-fx-background-color: #FFCCCC;">
+      <children>
+         <Label text="Important" textFill="#ef0c0c">
+            <VBox.margin>
+               <Insets left="10.0" top="10.0" />
+            </VBox.margin>
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <Label prefHeight="30.0" prefWidth="902.0" text="Please recheck the traveler  Name Password No and Details or the airlines will penalise you for providing incorrect Information" textFill="#d76666">
+            <VBox.margin>
+               <Insets left="10.0" />
+            </VBox.margin>
+         </Label>
+      </children>
+   </VBox>
+   <StackPane>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <children>
+         <VBox fx:id="vbox1" prefHeight="200.0" prefWidth="100.0" styleClass="traveler_detail" stylesheets="@style2.css">
+            <children>
+               <HBox prefHeight="59.0" prefWidth="893.0">
+                  <children>
+                     <Label fx:id="idtravelerdetails" styleClass="clabel" stylesheets="@style2.css" text="Traveler Details" textFill="#170886">
+                        <HBox.margin>
+                           <Insets left="10.0" top="8.0" />
+                        </HBox.margin>
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="71.0" prefWidth="893.0">
+                  <children>
+                     <VBox prefHeight="58.0" prefWidth="377.0">
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                        <children>
+                           <Label fx:id="idname" text="Traveler Name" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="idnameLa" prefHeight="27.0" prefWidth="375.0" text=" Rakibul Islam Shafiq" textFill="#0d1fa4">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </VBox>
+                     <VBox layoutX="30.0" layoutY="10.0" prefHeight="58.0" prefWidth="401.0">
+                        <children>
+                           <Label fx:id="idgmail" text="Traveler Gmail" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="idgmaillLa" prefHeight="27.0" prefWidth="417.0" text=" Rakibul Islam Shafiq" textFill="#0d1fa4">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                        </children>
+                        <HBox.margin>
+                           <Insets left="10.0" />
+                        </HBox.margin>
+                     </VBox>
+                  </children>
+               </HBox>
+               <HBox prefHeight="68.0" prefWidth="893.0">
+                  <children>
+                     <VBox prefHeight="54.0" prefWidth="383.0">
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                        <children>
+                           <Label fx:id="idpass" text="Passport No" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="idpassLa" prefHeight="34.0" prefWidth="367.0" text="Rakibul Islam" textFill="#0d1fa4">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </VBox>
+                     <VBox layoutX="30.0" layoutY="10.0" prefHeight="54.0" prefWidth="428.0">
+                        <children>
+                           <Label fx:id="idnid" text="National ID" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="idnidLa" prefHeight="43.0" prefWidth="478.0" text="Rakibul Islam" textFill="#0d1fa4">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                        </children>
+                        <HBox.margin>
+                           <Insets left="10.0" />
+                        </HBox.margin>
+                     </VBox>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+         <VBox fx:id="vbox2" prefHeight="200.0" prefWidth="100.0" styleClass="traveler_detail" stylesheets="@style2.css" visible="false">
+            <children>
+               <HBox prefHeight="59.0" prefWidth="893.0">
+                  <children>
+                     <Label fx:id="idtraveler2" styleClass="clabel" stylesheets="@style2.css" text="Traveler Details" textFill="#170886">
+                        <HBox.margin>
+                           <Insets left="10.0" top="14.0" />
+                        </HBox.margin>
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="71.0" prefWidth="893.0">
+                  <children>
+                     <VBox prefHeight="58.0" prefWidth="377.0">
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                        <children>
+                           <Label fx:id="idname1" text="Traveler Name" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="idtxtname" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="368.0" />
+                        </children>
+                     </VBox>
+                     <VBox layoutX="30.0" layoutY="10.0" prefHeight="58.0" prefWidth="401.0">
+                        <children>
+                           <Label fx:id="idgmail2" text="Traveler Gmail" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="idtxtgmail" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="414.0" />
+                        </children>
+                        <HBox.margin>
+                           <Insets left="10.0" />
+                        </HBox.margin>
+                     </VBox>
+                  </children>
+               </HBox>
+               <HBox prefHeight="68.0" prefWidth="893.0">
+                  <children>
+                     <VBox prefHeight="54.0" prefWidth="383.0">
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                        <children>
+                           <Label fx:id="idpass2" text="Passport No" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="idtxtpass" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="375.0" />
+                        </children>
+                     </VBox>
+                     <VBox layoutX="30.0" layoutY="10.0" prefHeight="54.0" prefWidth="428.0">
+                        <children>
+                           <Label fx:id="idnext2" text="National ID" textFill="#969292">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="idtxtnid" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="422.0" />
+                        </children>
+                        <HBox.margin>
+                           <Insets left="10.0" />
+                        </HBox.margin>
+                     </VBox>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </StackPane>
+   <VBox layoutX="20.0" layoutY="151.0" prefHeight="219.0" prefWidth="898.0" styleClass="traveler_detail" stylesheets="@style2.css">
+      <children>
+         <VBox>
+            <children>
+               <HBox alignment="CENTER" prefHeight="3.0" prefWidth="893.0">
+                  <children>
+                     <Label fx:id="idunable" textFill="#d91c1c" />
+                  </children>
+               </HBox>
+               <HBox prefHeight="50.0" prefWidth="893.0">
+                  <children>
+                     <Label fx:id="idflightdetail" styleClass="clabel" stylesheets="@style2.css" text="Flight Details" textFill="#170886">
+                        <HBox.margin>
+                           <Insets left="10.0" top="8.0" />
+                        </HBox.margin>
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+         <HBox prefHeight="71.0" prefWidth="893.0">
+            <children>
+               <VBox prefHeight="70.0" prefWidth="277.0">
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+                  <children>
+                     <Label fx:id="iddep" text="Departure" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idfrom" prefHeight="27.0" prefWidth="314.0" text="Bangladesh" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox layoutX="30.0" layoutY="10.0" prefHeight="70.0" prefWidth="262.0">
+                  <children>
+                     <Label fx:id="iddes" text="Destination" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idto" prefHeight="27.0" prefWidth="417.0" text="America" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+                  <HBox.margin>
+                     <Insets left="10.0" />
+                  </HBox.margin>
+               </VBox>
+               <VBox layoutX="30.0" layoutY="10.0" prefHeight="70.0" prefWidth="335.0">
+                  <children>
+                     <Label fx:id="idairport" text="Airport" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idairname" prefHeight="27.0" prefWidth="330.0" text="Shah jalal Internationnal Airport" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <HBox layoutX="12.0" layoutY="72.0" prefHeight="71.0" prefWidth="893.0">
+            <children>
+               <VBox prefHeight="71.0" prefWidth="196.0">
+                  <HBox.margin>
+                     <Insets left="20.0" />
+                  </HBox.margin>
+                  <children>
+                     <Label fx:id="isdate" text="Date" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idlaDate" prefHeight="27.0" prefWidth="314.0" text="2024-12-13" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox layoutX="30.0" layoutY="10.0" prefHeight="71.0" prefWidth="190.0">
+                  <children>
+                     <Label fx:id="idtime" text="Time" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idlaTime" prefHeight="27.0" prefWidth="266.0" text="22:30:34" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+                  <HBox.margin>
+                     <Insets left="10.0" />
+                  </HBox.margin>
+               </VBox>
+               <VBox layoutX="30.0" layoutY="10.0" prefHeight="71.0" prefWidth="199.0">
+                  <children>
+                     <Label fx:id="idseat" text="Seat No" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idlaseat" prefHeight="27.0" prefWidth="314.0" text="A23" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox layoutX="427.0" layoutY="10.0" prefHeight="71.0" prefWidth="199.0">
+                  <children>
+                     <Label fx:id="idflight" text="Flight No" textFill="#969292">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="idlaFlight" prefHeight="27.0" prefWidth="314.0" text="AXG7" textFill="#0d1fa4">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+      </children>
+      <VBox.margin>
+         <Insets left="10.0" right="10.0" />
+      </VBox.margin>
+   </VBox>
+   <StackPane>
+      <children>
+         <HBox fx:id="hbox2" alignment="CENTER" prefHeight="21.0" prefWidth="918.0" visible="false">
+            <children>
+               <Button fx:id="idconfirm2" mnemonicParsing="false" onAction="#confirm2" prefHeight="47.0" prefWidth="370.0" styleClass="conbtn" stylesheets="@style2.css" text="Confirm" />
+            </children>
+         </HBox>
+         <HBox fx:id="hbox1" prefHeight="66.0" prefWidth="918.0">
+            <children>
+               <Button fx:id="idedit" mnemonicParsing="false" onAction="#idedit" prefHeight="45.0" prefWidth="358.0" styleClass="editbtn" stylesheets="@style2.css" text="Edit Details">
+                  <HBox.margin>
+                     <Insets left="80.0" top="10.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="idconfirm" layoutX="30.0" layoutY="20.0" mnemonicParsing="false" onAction="#onconfirm" prefHeight="45.0" prefWidth="358.0" styleClass="conbtn" stylesheets="@style2.css" text="Confirm">
+                  <HBox.margin>
+                     <Insets left="30.0" top="10.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Button>
+            </children>
+         </HBox>
+      </children>
+   </StackPane>
+</children>
+</VBox>

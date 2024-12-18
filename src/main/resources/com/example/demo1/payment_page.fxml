@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="116.0" prefWidth="334.0" style="-fx-background-color: red;" styleClass="fare_feild" stylesheets="@style.css">
+         <children>
+            <Label text="Total Fare" textFill="#fcf8f8">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="94.0" layoutY="5.0" prefHeight="62.0" prefWidth="157.0" text="\$320.00" textFill="#f4f0f0">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <HBox prefHeight="96.0" prefWidth="334.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="99.0" prefWidth="112.0" styleClass="fare_ima" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" styleClass="fare_ima">
+                     <image>
+                        <Image url="@visa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="111.0" styleClass="fare_ima" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fitHeight="78.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bkash.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="110.0" styleClass="fa_ima" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@netbanking%20(3).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <StackPane prefHeight="222.0" prefWidth="334.0">
+         <children>
+            <VBox fx:id="idCard" prefHeight="270.0" prefWidth="334.0" visible="false">
+               <children>
+                  <TextField alignment="BOTTOM_LEFT" prefHeight="61.0" prefWidth="334.0" promptText="Card Number" styleClass="fare_txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <HBox prefHeight="64.0" prefWidth="334.0">
+                     <children>
+                        <TextField alignment="BOTTOM_LEFT" prefHeight="69.0" prefWidth="186.0" promptText="Expiry Date" styleClass="fare_txt" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField alignment="BOTTOM_LEFT" prefHeight="68.0" prefWidth="146.0" promptText="CVV" styleClass="fare2_txt" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TextField alignment="BASELINE_LEFT" prefHeight="65.0" prefWidth="334.0" promptText="Card Holder" styleClass="fare_txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="59.0" prefWidth="174.0" promptText="Amount" styleClass="fare4_txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox fx:id="idBikash" prefHeight="200.0" prefWidth="100.0" visible="false">
+               <children>
+                  <Label text="Mobile Number" textFill="#514c4c">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="44.0" prefWidth="314.0" promptText="01XXXXXXXXX" styleClass="btn5" stylesheets="@style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Amount" textFill="#595757">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="20.0" layoutY="48.0" prefHeight="45.0" prefWidth="314.0" promptText="XX.XX" styleClass="btn5" stylesheets="@style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Pin Number" textFill="#484646">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="46.0" prefWidth="234.0" promptText="XXXXXX" styleClass="btn5" stylesheets="@style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="idBankl" prefHeight="242.0" prefWidth="334.0" visible="false">
+               <children>
+                  <ComboBox prefHeight="33.0" prefWidth="256.0" promptText="Select Bank" />
+                  <Label prefHeight="28.0" prefWidth="67.0" text="User Name " textFill="#4b4949" />
+                  <TextField prefHeight="38.0" prefWidth="314.0" promptText="User Name" styleClass="btn5" stylesheets="@style.css" />
+                  <Label layoutX="20.0" layoutY="66.0" prefHeight="29.0" prefWidth="67.0" text="Password" textFill="#4b4949" />
+                  <PasswordField prefHeight="34.0" prefWidth="314.0" promptText="Password" styleClass="btn5" stylesheets="@style.css" />
+                  <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" text="Login" textFill="#0a7977">
+                     <VBox.margin>
+                        <Insets left="60.0" right="60.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="334.0" style="-fx-background-color: red;">
+         <children>
+            <Label text="Pay Now" textFill="#f7f4f4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

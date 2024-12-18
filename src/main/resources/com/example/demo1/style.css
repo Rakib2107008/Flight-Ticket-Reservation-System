@@ -1,0 +1,264 @@
+.root{
+-fx-background-image:url("backgroundimage.png");
+-fx-background-repeat:no-repeat;
+    -fx-background-attachment: fixed;
+    -fx-background-position: center;
+-fx-background-size: cover;
+}
+.nav_bar{
+    -fx-background-color:#190033;
+    /*-fx-border-style:intset;*/
+    /*-fx-border:100px 100px 100px 100px solid ;*/
+    -fx-border-color: black;
+}
+
+.nav_bar_btn {
+    -fx-background-color:transparent;
+    -fx-font-family: "Brush Script MT";
+    -fx-font-size:18px;
+}
+.nav_bar_btn2 {
+    -fx-background-color:#190033;
+}
+
+
+.root2
+  {
+    -fx-background-color:black;
+    /*-fx-border-style: outset;*/
+
+-fx-border-width: 5px;
+    -fx-background-radius:15px;
+    -fx-border-radius:10px;
+    -fx-border-color:white;
+
+
+}
+#root3
+{
+    -fx-background-color:white;
+    /*-fx-border-style: outset;*/
+
+    -fx-border-width: 5px;
+    -fx-background-radius:15px;
+    -fx-border-radius:10px;
+    -fx-border-color:white;
+
+
+}
+#root4
+{
+    -fx-background-color:white;
+    /*-fx-border-style: outset;*/
+
+    -fx-border-width: 5px;
+    -fx-background-radius:15px;
+    -fx-border-radius:10px;
+    -fx-border-color:white;
+
+
+}
+.sbtn1{
+
+
+    /*-fx-border-style: outset;*/
+    -fx-background-color:darkblue;
+
+    -fx-background-radius:6px;
+    /*-fx-border-radius:3px;*/
+
+
+}
+
+
+.sbtn1:selected{
+    -fx-background-color: lightgreen;
+ //-fx-fill: #00FF00;
+ -fx-fill: red;
+ }
+.sbtnb{
+
+
+   /*-fx-border-style: outset;*/
+    -fx-background-color:blue;
+
+    -fx-background-radius:6px;
+    -fx-border-radius:3px;
+
+
+}
+
+
+.sbtnb:selected{
+    -fx-background-color: lightgreen;
+//-fx-fill: #00FF00;
+    -fx-fill: red;
+}
+.sbtne{
+
+
+    /*-fx-border-style: outset;*/
+    -fx-background-color:lightblue;
+
+    //-fx-background-radius:6px;
+    -fx-border-radius:3px;
+
+
+}
+
+
+.sbtne:selected{
+    -fx-background-color: lightgreen;
+//-fx-fill: #00FF00;
+    -fx-fill: red;
+}
+.option_btn{
+
+
+    /*-fx-border-style: outset;*/
+
+
+    -fx-background-color: linear-gradient(to bottom,#0080FF,white);
+    -fx-font-family: "consolas",san-serif;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+
+}
+
+
+.option_btn:focused{
+    -fx-background-color: #CCFFE5;
+//-fx-fill: #00FF00;
+    -fx-fill: red;
+}
+
+
+.label_bar{
+    -fx-font-family: "consolas",san-serif;
+    -fx-font-weight:bold;
+    -fx-font-size: 14px;
+}
+.label_bar2{
+    -fx-font-family: "consolas",san-serif;
+    -fx-font-weight:bold;
+    -fx-font-size: 16px;
+}
+.file{
+    -fx-font-family:"Brush Script MT";
+    -fx-text-fill:#66B2FF ;
+
+    -fx-font-style:  oblique;
+    -fx-font-weight:bold;
+    -fx-font-size: 40px;
+
+}
+.Title_bar{
+    -fx-font-family: "consolas",san-serif;
+    -fx-font-weight:bold;
+    -fx-font-size: 18px;
+
+
+}
+.Title_border{
+
+    -fx-border-style:dotted;
+    /*-fx-border-bottom:100px dotted ;*/
+    -fx-border-color: black;
+
+}
+
+
+.passenger{
+    -fx-font-family: "consolas",san-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+}
+
+/* Style for all table cells */
+
+
+/* Style for selected rows */
+
+.textrest:hover{
+    -fx-border-color:lightgreen;
+    -fx-border-width:0 0 0 4;
+    -fx-fill: black;
+}
+.txt_feild{
+    /*-fx-border-style: outset;*/
+    //-fx-background-color: lightblue;
+    -fx-background-radius: 15 px;
+    -fx-border-radius:10px;
+}
+.fare_btn{
+    -fx-font-family: "consolas",san-serif;
+    -fx-font-weight:bold;
+    -fx-border-radius: 15px;
+
+}
+.fare_option{
+    -fx-background-color: linear-gradient(to bottom, #ff7e5f, #feb47b);
+}
+.fare_ima{
+    -fx-border-color:red;
+    -fx-border-width:0 2 0 0;
+}
+.fare_ima:focused {
+    -fx-background-color: white;
+}
+.fa_ima{
+    -fx-border-color:#E0E0E0;
+}
+.fa_ima:focused {
+    -fx-background-color: white;
+}
+.fare_txt{
+    -fx-border-color:red;
+    -fx-border-width:0 0 2 0;
+}
+.fare_txt:focused {
+    -fx-background-color: white;
+}.fare2_txt{
+    -fx-border-color:red;
+    -fx-border-width:0 0 2 2;
+
+}
+.fare2_txt:focused {
+    -fx-background-color: white;
+}.fare3_txt{
+    -fx-border-color:red;
+    -fx-border-width:0 0 0 0;
+
+}
+.fare2_txt:focused {
+    -fx-background-color: white;
+}
+.fare_feild{
+    /*-fx-border-style: outset;*/
+/*-fx-background-color: lightblue;*/
+    -fx-background-radius: 30 px;
+    -fx-border-radius:20px;
+}.fare4_txt:focused {
+     -fx-background-color: white;
+ }.fare4_txt{
+      -fx-border-color:red;
+      -fx-border-width:0 2 0 0;
+
+  }
+.btn5{
+    -fx-background-color: white;
+
+}
+  .btn5:focused {
+      -fx-border-color: red;
+      -fx-border-width: 0 0 1 0;
+
+  }
+
+.admin_back{
+    -fx-background-color:linear-gradient(to bottom, lightblue, blue);
+}
+
+.title_back{
+    -fx-background-color: lightblue;
+}

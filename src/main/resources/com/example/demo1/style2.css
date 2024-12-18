@@ -1,0 +1,167 @@
+.admin_back{
+    -fx-background-color:linear-gradient(to bottom, lightblue, blue);
+}
+.admin_btn{
+    -fx-font-family: "san-serif";
+    -fx-font-weight:bold;
+
+}
+.admin_b{
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+}
+.admin_b:focused {
+    -fx-background-color:#3399FF;
+    -fx-border-width: 0 0 0 0;
+
+}
+.table-view .column-header {
+    -fx-background-color:  #66B2FF;
+    -fx-pref-height: 40;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+// -fx-alignment: left;
+}
+/*.table-view .table-cell{*/
+/*    -fx-background-color: white;*/
+/*}*/
+.table-view .table-cell:selected {
+    -fx-background-color: blue;
+    //-fx-context-menu-enabled: var(50);
+    -fx-cell-size:500;
+}
+
+.table-view .table-cell {
+    -fx-wrap-text: true;
+}
+
+#idbtn {
+    -fx-background-radius: 0 20  20 0;
+    -fx-background-color: white;
+}#idbtn :focused{
+    -fx-background-radius: 0 20  20 0;
+    -fx-background-color: lightgreen;
+}
+/*#idsearch {*/
+/*    -fx-background-radius: 20 0  0 20;*/
+/*    -fx-background-color: white;*/
+/*}*/
+.btndel {
+    -fx-background-radius: 20 20  20 20;
+    -fx-background-color: white;
+}
+.btndel:focused {
+
+    -fx-background-color: lightgreen;
+}
+#idbtn2 {
+    -fx-background-radius: 0 20  20 0;
+    -fx-background-color: white;
+}
+#idsearch2 {
+    -fx-background-radius: 20 0  0 20;
+    -fx-background-color: white;
+}
+
+#idsearch6 {
+    -fx-background-radius: 20 0  0 20;
+
+}
+#idsearch6:focused {
+   -fx-border-color: lightgreen;
+
+}
+.date-picker .arrow-button {
+    -fx-opacity: 0; /* Makes the button completely invisible */
+    -fx-padding: 0; /* Removes padding for a cleaner look */
+    -fx-max-width: 0; /* Collapses the button width */
+}
+#datepick{
+    -fx-background-color:#A0A0A0;
+
+}
+.cancelbtn {
+
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+    fx-background-color: white;
+    -fx-border-color: coral;
+    -fx-border-width: 1 1 1 1;
+}.cancelbtn :hover{
+    // -fx-background-radius: 20 20  20 20;
+     -fx-color: coral;
+ }
+.continuebtn {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+    -fx-background-color: white;
+    -fx-border-color: lightgreen;
+    -fx-border-width: 1 1 1 1;
+}.continuebtn :hover{
+     //-fx-background-radius: 20 20  20 20;
+     -fx-color: lightgreen;
+ }
+ .textbtn{
+     -fx-border-radius: 20 20 20 20;
+     -fx-background-radius: 20 20 20 20 ;
+     -fx-background-color: white;
+     //-fx-border-color: red;
+     -fx-border-width: 0 0 1 0;
+ }
+.textbtn:focused{
+    //-fx-border-radius: 20 20 20 20;
+   // -fx-background-radius: 20 20 20 20 ;
+    -fx-background-color: white;
+-fx-border-color: red;
+    -fx-border-width: 1 1 1 1;
+}
+.flight_back{
+    -fx-background-color:linear-gradient(to right, #CCE5FF,lightblue);
+}
+.btnaple{
+    -fx-background-color: linear-gradient(to bottom,#0080FF,white);
+    -fx-font-family: "consolas",san-serif;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+    //-fx-font-style: bold;
+}
+.flightText{
+   // -fx-background-color: linear-gradient(to bottom,#0080FF,white);
+   // -fx-font-family: "consolas",san-serif;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+//-fx-font-style: bold;
+}
+.clabel{
+    -fx-font-family: "consolas",san-serif;
+}
+.userlabel{
+    -fx-font-family: "consolas",san-serif;
+}
+.traveler_detail{
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color:silver
+}
+.editbtn{
+    -fx-background-color: white;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color:blue;
+}
+.editbtn:selected{
+    -fx-background-color: silver;
+}
+.conbtn{
+    -fx-background-color:yellow;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20 ;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color:blue;
+}
+.signupla{
+    -fx-font-family: "consolas",san-serif;
+}
+.admin2_back{
+  -fx-background-color: transparent;
+}
