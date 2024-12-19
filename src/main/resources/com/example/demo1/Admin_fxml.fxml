@@ -169,8 +169,6 @@
                                     <TableColumn fx:id="idAir2" prefWidth="120.00002747774124" text="Airline" />
                                     <TableColumn fx:id="idDate2" prefWidth="120.00002747774124" text="Date" />
                                     <TableColumn fx:id="idTime2" prefWidth="120.00002747774124" text="Time" />
-                                    <TableColumn fx:id="idTime21" prefWidth="120.00002747774124" text="Ticket No" />
-                                    <TableColumn fx:id="idTime211" prefWidth="120.00002747774124" text="Ticket No" />
                                 </columns>
                               </TableView>
                            </children>
