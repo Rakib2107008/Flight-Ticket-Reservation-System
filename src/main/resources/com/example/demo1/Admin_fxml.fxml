@@ -159,27 +159,20 @@
                                     </Button>
                                  </children>
                               </HBox>
-                              <ScrollPane>
-                                 <content>
-                                    <TableView fx:id="idTable2" prefHeight="384.0" prefWidth="954.0">
-                                      <columns>
-                                        <TableColumn fx:id="idCusname" prefWidth="120.00002747774124" text="Customer Name" />
-                                          <TableColumn fx:id="idprice" prefWidth="120.00002747774124" text="Ticket Price" />
-                                          <TableColumn fx:id="idDep1" prefWidth="120.00002747774124" text="Departure" />
-                                          <TableColumn fx:id="iddes2" prefWidth="120.00002747774124" text="Destination" />
-                                          <TableColumn fx:id="idFli2" prefWidth="120.00002747774124" text="Flight No" />
-                                          <TableColumn fx:id="idAir2" prefWidth="120.00002747774124" text="Airline" />
-                                          <TableColumn fx:id="idDate2" prefWidth="120.00002747774124" text="Date" />
-                                          <TableColumn fx:id="idTime2" prefWidth="120.00002747774124" text="Time" />
-                                          <TableColumn fx:id="idTime21" prefWidth="120.00002747774124" text="Ticket No" />
-                                          <TableColumn fx:id="idTime211" prefWidth="120.00002747774124" text="Ticket No" />
-                                      </columns>
-                                    </TableView>
-                                 </content>
-                                 <VBox.margin>
-                                    <Insets bottom="20.0" left="20.0" right="5.0" top="20.0" />
-                                 </VBox.margin>
-                              </ScrollPane>
+                              <TableView fx:id="idTable2" prefHeight="384.0" prefWidth="954.0">
+                                <columns>
+                                  <TableColumn fx:id="idCusname" prefWidth="120.00002747774124" text="Customer Name" />
+                                    <TableColumn fx:id="idprice" prefWidth="120.00002747774124" text="Ticket Price" />
+                                    <TableColumn fx:id="idDep1" prefWidth="120.00002747774124" text="Departure" />
+                                    <TableColumn fx:id="iddes2" prefWidth="120.00002747774124" text="Destination" />
+                                    <TableColumn fx:id="idFli2" prefWidth="120.00002747774124" text="Flight No" />
+                                    <TableColumn fx:id="idAir2" prefWidth="120.00002747774124" text="Airline" />
+                                    <TableColumn fx:id="idDate2" prefWidth="120.00002747774124" text="Date" />
+                                    <TableColumn fx:id="idTime2" prefWidth="120.00002747774124" text="Time" />
+                                    <TableColumn fx:id="idTime21" prefWidth="120.00002747774124" text="Ticket No" />
+                                    <TableColumn fx:id="idTime211" prefWidth="120.00002747774124" text="Ticket No" />
+                                </columns>
+                              </TableView>
                            </children>
                         </VBox>
                      </children>
